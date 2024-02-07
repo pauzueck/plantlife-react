@@ -5,18 +5,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Cartwidget from '../cartWidget/cartwidget';
 import Logo from '../../logo/logo';
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
     return (
     <>
         <Navbar bg="light" data-bs-theme="light">
             <Container>
-                <Navbar.Brand href="#home"><Logo/></Navbar.Brand>
+                <Navbar.Brand as={NavLink} to="/"><Logo/></Navbar.Brand>
                 <Nav className="plantCategories">
-                    <Nav.Link href="#popular">Popular Picks</Nav.Link>
-                    <Nav.Link href="#indoor">Indoor Delights</Nav.Link>
-                    <Nav.Link href="#budget">Budget-Friendly Beauties</Nav.Link>
-                    <Nav.Link href="#pricing"><Cartwidget /></Nav.Link>
+                    <Nav.Link as={NavLink} to="/category/popular">Popular Picks</Nav.Link>
+                    <Nav.Link as={NavLink} to="/category/indoor">Indoor Delights</Nav.Link>
+                    <Nav.Link as={NavLink} to="/category/budget">Budget-Friendly Beauties</Nav.Link>
+                    <Nav.Link as={NavLink} to="/pricing"><Cartwidget /></Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
