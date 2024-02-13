@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './itemListContainer.css';
 import plantJson from "../../../plants.json";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function asyncMock(categoryId) {
     return new Promise((resolve,reject) => {
@@ -33,14 +33,13 @@ export default function ItemListContainer() {
         <h2>The place to find your perfect plant companion</h2>
         <div className="row">
             {plants.map(plant => (
-            <div key={plant.id} className="col-md-4 mb-4">
+            <div key={plant.id} className="col-md-3 mb-4">
                 <div className="card">
                 <div className="card-body">
+                    <img className="imagePlant" src={plant.image} alt='plant-image'/>
                     <h5 className="card-title">{plant.name}</h5>
-                    <p className="card-text">{plant.description}</p>
-                    <p className="card-text">Price: ${plant.price}</p>
-                    <p className="card-text">Stock: {plant.stock}</p>
-                    <p className="card-text">Category: {plant.category}</p>
+                    <p className="card-price">Price: ${plant.price}</p>
+                    <Link to={`/plant/${plant.id}`} className="btn btn-primary">View Details</Link>
                 </div>
                 </div>
             </div>

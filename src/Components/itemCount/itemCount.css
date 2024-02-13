@@ -1,0 +1,17 @@
+.selector{
+    margin-bottom: 20px;
+}
+.text-center{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-secondary-2{
+    border: ;
+    background-color: rgb(245, 245, 245);
+    color:#364037;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #6D8B74;
+    border-radius: 20px;
+}

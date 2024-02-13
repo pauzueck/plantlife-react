@@ -6,7 +6,8 @@
         "stock": 10,
         "price": 25.99,
         "category": "Popular Picks",
-        "categoryParam": "popular"
+        "categoryParam": "popular",
+        "image":"/monstera.jpg"
         },
         {
         "id": 2,
@@ -15,8 +16,10 @@
         "stock": 15,
         "price": 19.99,
         "category": "Popular Picks",
-        "categoryParam": "popular"
+        "categoryParam": "popular",
+        "image":"/rubberplant.jpg"
         },
+
         {
         "id": 3,
         "name": "Fiddle Leaf Fig",
@@ -24,8 +27,10 @@
         "stock": 8,
         "price": 29.99,
         "category": "Popular Picks",
-        "categoryParam": "popular"
+        "categoryParam": "popular",
+        "image":"/fiddleleaffig.jpg"
         },
+
         {
         "id": 4,
         "name": "Snake Plant",
@@ -33,17 +38,21 @@
         "stock": 12,
         "price": 17.99,
         "category": "Popular Picks",
-        "categoryParam": "popular"
+        "categoryParam": "popular",
+        "image":"/snakeplant.jpg"
         },
+
         {
         "id": 5,
         "name": "Peperomia",
-        "description": "Peperomia is a compact indoor plant with attractive foliage patterns and a variety of leaf shapes.",
+        "description": "Peperomia is a compact indoor and very lovely plant with attractive foliage patterns and a variety of leaf shapes.",
         "stock": 20,
         "price": 12.99,
         "category": "Indoor Delights",
-        "categoryParam": "indoor"
+        "categoryParam": "budget",
+        "image":"/chinesemp.jpg"
         },
+
         {
         "id": 6,
         "name": "Jade",
@@ -51,8 +60,10 @@
         "stock": 18,
         "price": 14.99,
         "category": "Indoor Delights",
-        "categoryParam": "indoor"
+        "categoryParam": "indoor",
+        "image":"/jadeplant.jpg"
         },
+
         {
         "id": 7,
         "name": "Peace Lily",
@@ -60,8 +71,10 @@
         "stock": 10,
         "price": 16.99,
         "category": "Indoor Delights",
-        "categoryParam": "indoor"
+        "categoryParam": "indoor",
+        "image":"/peacelilly.jpg"
         },
+
         {
         "id": 8,
         "name": "Peacock Plant",
@@ -69,17 +82,21 @@
         "stock": 10,
         "price": 18.99,
         "category": "Indoor Delights",
-        "categoryParam": "indoor"
+        "categoryParam": "indoor",
+        "image":"/peacockplant.jpg"
         },
+
         {
         "id": 9,
         "name": "Ficus",
-        "description": "Ficus is a versatile indoor plant available in various varieties, including Fiddle Leaf Fig and Weeping Fig, adding lush greenery to interiors.",
+        "description": "Ficus is an indoor plant available in various varieties, including Fiddle Leaf Fig and Weeping Fig, adding lush greenery to interiors.",
         "stock": 15,
         "price": 22.99,
         "category": "Indoor Delights",
-        "categoryParam": "indoor"
+        "categoryParam": "indoor",
+        "image":"/ficus.jpg"
         },
+
         {
         "id": 10,
         "name": "Pothos",
@@ -87,78 +104,7 @@
         "stock": 25,
         "price": 10.99,
         "category": "Indoor Delights",
-        "categoryParam": "indoor"
-        },
-        {
-        "id": 11,
-        "name": "Rubber Plant",
-        "description": "Rubber Plant is a hardy indoor plant with glossy, dark green leaves that can tolerate low light.",
-        "stock": 20,
-        "price": 19.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-        "id": 12,
-        "name": "Fiddle Leaf Fig",
-        "description": "Fiddle Leaf Fig is a trendy indoor plant with large, violin-shaped leaves that add elegance to any space.",
-        "stock": 15,
-        "price": 29.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-        "id": 13,
-        "name": "Jade",
-        "description": "Jade is a succulent plant with fleshy leaves that require minimal watering, making it perfect for busy plant enthusiasts.",
-        "stock": 20,
-        "price": 14.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-        "id": 14,
-        "name": "Peace Lily",
-        "description": "Peace Lily is an elegant indoor plant with dark green leaves and white flowers, known for its air-purifying qualities.",
-        "stock": 12,
-        "price": 16.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-        "id": 15,
-        "name": "Snake Plant",
-        "description": "Snake Plant is a low-maintenance indoor plant with tall, upright leaves that thrive in various light conditions.",
-        "stock": 18,
-        "price": 17.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-        "id": 16,
-        "name": "Peacock Plant",
-        "description": "Peacock Plant, also known as Calathea, features colorful foliage patterns that resemble the feathers of a peacock.",
-        "stock": 10,
-        "price": 18.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-        "id": 17,
-        "name": "Ficus",
-        "description": "Ficus is a versatile indoor plant available in various varieties, including Fiddle Leaf Fig and Weeping Fig, adding lush greenery to interiors.",
-        "stock": 15,
-        "price": 22.99,
-        "category": "Budget-Friendly Beauties",
-        "categoryParam": "budget"
-        },
-        {
-            "id": 18,
-            "name": "Pothos",
-            "description": "Pothos, also known as Devil's Ivy, is a popular trailing plant with heart-shaped leaves that can thrive in a variety of light conditions.",
-            "stock": 25,
-            "price": 10.99,
-            "category": "Budget-Friendly Beauties",
-            "categoryParam": "budget"
+        "categoryParam": "budget",
+        "image":"/pothos.jpg"
         }
     ]
