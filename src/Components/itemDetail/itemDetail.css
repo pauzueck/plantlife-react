@@ -1,0 +1,40 @@
+h3{
+    font-family: 'Lato', sans-serif;
+    color: #364037;
+    font-size: 48px;
+}
+
+p{
+    margin: 20px 40px 20px 0px;
+}
+
+.plantDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.plantDescription{
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 40%;
+    margin-right: 60px;
+}
+
+.plantImage{
+    height: 500px;
+    border-radius: 25px;
+    margin-left: 60px;
+}
+
+.btn-secondary{
+    background-color: rgb(245, 245, 245);
+    color:#364037;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

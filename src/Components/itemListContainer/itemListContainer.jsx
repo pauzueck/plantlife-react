@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './itemListContainer.css';
 import plantJson from "../../../plants.json";
 import { Link, useParams } from "react-router-dom";
+import { getFirestore, doc, getDoc, collection } from "firebase/firestore"
 
 function asyncMock(categoryId) {
     return new Promise((resolve,reject) => {

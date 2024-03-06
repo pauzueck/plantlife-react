@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import plantJson from "../../../plants.json";
-import './itemDetailContainer.css';
-import ItemCount from "../itemCount/itemCount";
-
-
+import ItemDetail from '../itemDetail/itemDetail';
 
 function fetchPlantById(id) {
     return new Promise((resolve, reject) => {
@@ -19,6 +15,7 @@ function fetchPlantById(id) {
         }, 1000);
     });
 }
+
 const ItemDetailContainer = () => {
     const { id } = useParams();
     const [plant, setPlant] = useState(null);
@@ -35,27 +32,10 @@ const ItemDetailContainer = () => {
     }
 
     if (!plant) {
-        return null; // Render nothing if plant is not found
+        return null; 
     }
 
-    return (
-        <div>
-            <div className='plantDetail'>
-            <div className='plantDescription'>
-                <h3>{plant.name}</h3>
-                <p>Description: {plant.description}</p>
-                <p>Category: {plant.category}</p>
-                <p>Price: ${plant.price}</p>
-                <p>Stock: {plant.stock}</p>
-                <ItemCount stock={plant.stock} initial={1} />
-                <Link to="/" className="btn btn-secondary">Back to Plant List</Link>
-            </div>
-            <div>
-                <img className='plantImage' src={plant.image} alt={plant.name} />
-            </div>
-            </div>
-        </div>
-    );
+    return <ItemDetail plant={plant} />;
 };
 
 export default ItemDetailContainer;
