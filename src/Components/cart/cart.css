@@ -1,0 +1,67 @@
+.yourOrder{
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    margin: 80px 400px 80px 400px;
+    border-radius: 25px;
+}
+.picturePlant{
+    height: 180px;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+h2{
+    color: #364037;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px ;
+}
+
+h3{
+    font-size: 25px;
+}
+
+.orderInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nameImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totalPrice{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 200px;
+}
+
+.btn-primary{
+    margin-right: 40px;
+}
+
+.emptyCart{
+    text-align: center;
+}
+
+.emptyCart h2{
+    text-align: center;
+}
+
+.emptyCart button{
+    text-align: center;
+}
+
+.emptyCart img{
+    height: 100px;
+}
