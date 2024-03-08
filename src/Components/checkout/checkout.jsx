@@ -28,6 +28,7 @@ const Checkout = () => {
         addDoc(orderRef, newOrder)
           .then((doc) => {
             setOrderId(doc.id);
+            emptyCart();
           })
     }
 
