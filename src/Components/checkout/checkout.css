@@ -1,0 +1,66 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: #6D8B74;
+    margin: 80px 30% 80px 30%;
+    border-radius: 25px;
+    box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form h1{
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.formCheckout{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formCheckout input{
+    font-family: 'Lato', sans-serif;
+    padding-left: 15px;
+    background-color: white;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.completeCheckout{
+    background-color: #364037;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 35px;
+    border-radius: 10px;
+} 
+
+.thankyouCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6D8B74;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 80px 30% 80px 30%;
+    border-radius: 25px;
+    box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.thankyouCont p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.thankyouCont button{
+    width: 180px;
+    margin-bottom: 40px;
+}

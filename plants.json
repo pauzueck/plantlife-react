@@ -4,7 +4,7 @@
         "name": "Monstera",
         "description": "Monstera is a popular indoor plant known for its large, glossy leaves and easy-care nature.",
         "stock": 10,
-        "price": 25.99,
+        "price": 25,
         "category": "Popular Picks",
         "categoryParam": "popular",
         "image":"/monstera.jpg"
@@ -14,7 +14,7 @@
         "name": "Rubber Plant",
         "description": "Rubber Plant is a hardy indoor plant with glossy, dark green leaves that can tolerate low light.",
         "stock": 15,
-        "price": 19.99,
+        "price": 20,
         "category": "Popular Picks",
         "categoryParam": "popular",
         "image":"/rubberplant.jpg"
@@ -25,7 +25,7 @@
         "name": "Fiddle Leaf Fig",
         "description": "Fiddle Leaf Fig is a trendy indoor plant with large, violin-shaped leaves that add elegance to any space.",
         "stock": 8,
-        "price": 29.99,
+        "price": 30,
         "category": "Popular Picks",
         "categoryParam": "popular",
         "image":"/fiddleleaffig.jpg"
@@ -36,7 +36,7 @@
         "name": "Snake Plant",
         "description": "Snake Plant is a low-maintenance indoor plant with tall, upright leaves that thrive in various light conditions.",
         "stock": 12,
-        "price": 17.99,
+        "price": 18,
         "category": "Popular Picks",
         "categoryParam": "popular",
         "image":"/snakeplant.jpg"
@@ -47,7 +47,7 @@
         "name": "Peperomia",
         "description": "Peperomia is a compact indoor and very lovely plant with attractive foliage patterns and a variety of leaf shapes.",
         "stock": 20,
-        "price": 12.99,
+        "price": 12.5,
         "category": "Indoor Delights",
         "categoryParam": "budget",
         "image":"/chinesemp.jpg"
@@ -58,7 +58,7 @@
         "name": "Jade",
         "description": "Jade is a succulent plant with fleshy leaves that require minimal watering, making it perfect for busy plant enthusiasts.",
         "stock": 18,
-        "price": 14.99,
+        "price": 15,
         "category": "Indoor Delights",
         "categoryParam": "indoor",
         "image":"/jadeplant.jpg"
@@ -69,7 +69,7 @@
         "name": "Peace Lily",
         "description": "Peace Lily is an elegant indoor plant with dark green leaves and white flowers, known for its air-purifying qualities.",
         "stock": 10,
-        "price": 16.99,
+        "price": 17,
         "category": "Indoor Delights",
         "categoryParam": "indoor",
         "image":"/peacelilly.jpg"
@@ -80,7 +80,7 @@
         "name": "Peacock Plant",
         "description": "Peacock Plant, also known as Calathea, features colorful foliage patterns that resemble the feathers of a peacock.",
         "stock": 10,
-        "price": 18.99,
+        "price": 19,
         "category": "Indoor Delights",
         "categoryParam": "indoor",
         "image":"/peacockplant.jpg"
@@ -91,7 +91,7 @@
         "name": "Ficus",
         "description": "Ficus is an indoor plant available in various varieties, including Fiddle Leaf Fig and Weeping Fig, adding lush greenery to interiors.",
         "stock": 15,
-        "price": 22.99,
+        "price": 23,
         "category": "Indoor Delights",
         "categoryParam": "indoor",
         "image":"/ficus.jpg"
@@ -102,7 +102,7 @@
         "name": "Pothos",
         "description": "Pothos, also known as Devil's Ivy, is a popular trailing plant with heart-shaped leaves that can thrive in a variety of light conditions.",
         "stock": 25,
-        "price": 10.99,
+        "price": 11,
         "category": "Indoor Delights",
         "categoryParam": "budget",
         "image":"/pothos.jpg"
