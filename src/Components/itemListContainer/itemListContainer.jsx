@@ -1,32 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import './itemListcontainer.css';
-import plantJson from "../../../plants.json";
 import { Link, useParams } from "react-router-dom";
-import { getFirestore, doc, getDoc, collection } from "firebase/firestore"
+import { getDocs, collection, query, where } from "firebase/firestore"
+import { db } from '../../main';
 
-function asyncMock(categoryId) {
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            if(categoryId === undefined){
-                resolve(plantJson);
-            }else {
-                const filterPlants = plantJson.filter((item) => {
-                    return item.categoryParam === categoryId
-                })
-                resolve(filterPlants)
-            }
-            
-        }, 1000);
-    });
-}
+
 
 export default function ItemListContainer() {
 
-    const { categoryId } = useParams()
+    const categoryId = useParams().categoryId;
     const [plants, setPlants] = useState([]);
 
     useEffect(() => {
-        asyncMock(categoryId).then((res) => setPlants(res));
+        const plantsRef = collection(db, "plants");
+        const q = categoryId ? query(plantsRef, where("categoryParam", "==", categoryId)) : plantsRef;
+
+        getDocs(q)
+        
+        .then((resp) => {
+
+            setPlants(
+                resp.docs.map((doc)=> {
+                    return {...doc.data(), id: doc.id}
+                })
+            )
+        })
     }, [categoryId]);
 
     return (

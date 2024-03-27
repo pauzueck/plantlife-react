@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import plantJson from "../../../plants.json";
 import ItemDetail from '../itemDetail/itemDetail';
+import {doc, getDoc} from "firebase/firestore";
+import { db } from '../../main';
 
-function fetchPlantById(id) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const plant = plantJson.find(plant => plant.id === parseInt(id));
-            if (plant) {
-                resolve(plant);
-            } else {
-                reject(new Error('Plant not found'));
-            }
-        }, 1000);
-    });
-}
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
@@ -22,9 +11,15 @@ const ItemDetailContainer = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetchPlantById(id)
-            .then(plant => setPlant(plant))
-            .catch(error => setError(error.message));
+        
+        const docRef = doc(db, "plants", id);
+        getDoc(docRef)
+        .then((resp)=>{
+            setPlant(
+                { ...resp.data(), id: resp.id}
+            );
+        })
+
     }, [id]);
 
     if (error) {

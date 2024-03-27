@@ -7,29 +7,22 @@ import './itemDetail.css';
 
 
 const ItemDetail = ({ plant }) => {
-
-    const { cart, setCart } = useContext(cartContext);
+    const { cart, setCart, qtyPlants } = useContext(cartContext);
 
     const handleAddToCart = (quantity) => {
         const itemAdded = { ...plant, quantity };
 
-        const newCart = [...cart];
-        const inCart = cart.find((plant) => plant.id === itemAdded.id);
+        const inCartIndex = cart.findIndex((item) => item.id === itemAdded.id);
 
-        if (inCart) {
-            inCart.quantity = inCart.quantity + quantity;
-            setCart(newCart);
+        if (inCartIndex !== -1) {
+            const updatedCart = [...cart];
+            updatedCart[inCartIndex].quantity += quantity;
+            setCart(updatedCart);
         } else {
-            setCart( [...cart, itemAdded]);
+            setCart([...cart, itemAdded]);
         }
-
-        setCart([...cart, itemAdded]);
-
-        const qtyPlants = () => {
-            return cart.reduce((acc, plant) => plant.quantity, 0);
-        }
-
     };
+
     return (
         <div className='plantDetail'>
             <div className='plantDescription'>
